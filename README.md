@@ -1,1 +1,1 @@
-lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+Ini fitur 1
