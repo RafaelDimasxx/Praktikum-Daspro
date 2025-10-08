@@ -34,7 +34,8 @@ Algoritma
 * Jika bukan mahasiswa maupun dosen, maka tampilkan “Akses ditolak”.
 ### Buatlah flowchart dan pseudocode untuk menyelesaikan masalah tersebut!
 ![flowchart2](flowchart2.drawio.png)
-```Deklarasi
+```
+Deklarasi
     String statusAkademik
     int sks
 Algoritma
