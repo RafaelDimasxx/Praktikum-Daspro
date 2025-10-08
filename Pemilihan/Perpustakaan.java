@@ -11,7 +11,9 @@ public class Perpustakaan {
         System.out.println("Apakah Anda membawa KTM? (true/false)");
         bawaKTM = input.nextBoolean();
 
-        if (bawaKTM == false) {
+        if (bawaKTM) {
+            System.out.println("Selamat Datang");
+        } else {
             System.out.println("Apakah Anda sudah mendaftar online? (true/false)");
             registOnline = input.nextBoolean();
             if (registOnline == true) {
@@ -19,8 +21,6 @@ public class Perpustakaan {
             } else {
                 System.out.println("Mohon membawa KTM atau lakukan registrasi online dahulu!");
             }
-        } else {
-            System.out.println("Selamat Datang");
         }
     }
 }
