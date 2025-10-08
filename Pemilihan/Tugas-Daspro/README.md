@@ -6,8 +6,8 @@
 online, maka boleh masuk.
 * Jika tidak memenuhi salah satu dari dua syarat tersebut, maka ditolak masuk.
 ### Buatlah flowchart dan pseudocode untuk menyelesaikan masalah tersebut!
-![flowchart1](Dokumentasi-Praktikum/flowchart1.drawio.png)
-![pseudo1](Tugas-Daspro/pseudo1.txt)
+![flowchart1](flowchart1.drawio.png)
+![pseudo1](pseudo1.txt)
 
 ### 2. Di kampus tersedia layanan WiFi gratis yang hanya bisa diakses oleh civitas akademika. Sistem hotspot kampus akan melakukan pengecekan sebagai berikut:
 * Jika jenis pengguna adalah dosen, maka tampilkan “Akses WiFi diberikan (dosen)”. 
@@ -16,7 +16,7 @@ online, maka boleh masuk.
     * Jika SKS < 12, maka tampilkan “Akses ditolak, SKS kurang dari 12”.
 * Jika bukan mahasiswa maupun dosen, maka tampilkan “Akses ditolak”.
 ### Buatlah flowchart dan pseudocode untuk menyelesaikan masalah tersebut!
-![flowchart2](Dokumentasi-Praktikum/flowchart2.drawio.png)
-![pseudo2](Tugas-Daspro/pseudo2.txt)
+![flowchart2](flowchart2.drawio.png)
+![pseudo2](pseudo2.txt)
 
 
