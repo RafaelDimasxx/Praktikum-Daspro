@@ -7,7 +7,8 @@ online, maka boleh masuk.
 * Jika tidak memenuhi salah satu dari dua syarat tersebut, maka ditolak masuk.
 ### Buatlah flowchart dan pseudocode untuk menyelesaikan masalah tersebut!
 ![flowchart1](flowchart1.drawio.png)
-```Deklarasi
+```
+Deklarasi
     boolean bawaKTM
     boolean registOnline
 Algoritma
@@ -24,7 +25,7 @@ Algoritma
             Output("Mohon membawa KTM atau lakukan registrasi online dahulu!")
         EndIf
     EndIf
-
+```
 ### 2. Di kampus tersedia layanan WiFi gratis yang hanya bisa diakses oleh civitas akademika. Sistem hotspot kampus akan melakukan pengecekan sebagai berikut:
 * Jika jenis pengguna adalah dosen, maka tampilkan “Akses WiFi diberikan (dosen)”. 
 * Jika jenis pengguna adalah mahasiswa, maka sistem akan memeriksa jumlah SKS yang diambil:
@@ -52,4 +53,4 @@ Algoritma
     Else
         Output("Akses Wifi Tidak Diberikan")
     EndIf
-
+```
