@@ -16,7 +16,7 @@ public class Perpustakaan {
         } else {
             System.out.println("Apakah Anda sudah mendaftar online? (true/false)");
             registOnline = input.nextBoolean();
-            if (registOnline == true) {
+            if (registOnline) {
                 System.out.println("Selamat Datang");
             } else {
                 System.out.println("Mohon membawa KTM atau lakukan registrasi online dahulu!");
