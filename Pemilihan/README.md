@@ -34,7 +34,9 @@
 * Program memeriksa apakah mahasiswa sudah bebas kompen atau tidak.
 * Jika mahasiswa sudah bebas kompen, maka program akan memeriksa apakah jumlah log bimbingan dari pembimbing 1 dan pembimbing 2 sudah mencapai syarat yang ditentukan.
 * Jika kedua syarat terpenuhi, maka program akan menampilkan output "Mahasiswa boleh mendaftar ujian skripsi".
-* Jika salah satu syarat tidak terpenuhi, maka program akan menampilkan output "Gagal! Log bimbingan 1 kurang dari 8 kali dan bimbingan 2 kurang dari 4 kali".
+* Jika log bimbingan pembimbing 1 kurang dari 8 kali dan log bimbingan pembimbing 2 kurang dari 4 kali, maka program akan menampilkan output "Gagal! Log bimbingan 1 kurang dari 8 kali dan bimbingan 2 kurang dari 4 kali".
+* Jika log bimbingan pembimbing 1 kurang dari 8 kali sedangkan log bimbingan pembimbing 2 mencapai syarat, maka program akan menampilkan output "Gagal! Log bimbingan 1 kurang dari 8 kali".
+* Jika log bimbingan pembimbing 2 kurang dari 4 kali sedangkan log bimbingan pembimbing 1 mencapai syarat, maka program akan menampilkan output "Gagal! Log bimbingan 2 kurang dari 4 kali".
 * Jika mahasiswa belum bebas kompen, maka program akan menampilkan output "Mahasiswa masih memiliki tanggungan kompen".
 
 
