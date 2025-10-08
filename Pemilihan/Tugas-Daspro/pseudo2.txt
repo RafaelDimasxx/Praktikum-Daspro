@@ -1,0 +1,19 @@
+Deklarasi
+    String statusAkademik
+    int sks
+Algoritma
+    Output("Apa Status Akademik Anda? (Dosen/Mahasiswa)")
+    Input(statusAkademik)
+    If (statusAkademik == "Dosen") Then
+        Output("Akses Wifi Diberikan (Dosen)")
+    Else If (statusAkademik == "Mahasiswa") Then
+        Output("Berapa jumlah SKS yang anda ambil?")
+        Input(sks)
+        If (sks >= 12) Then
+            Output("Akses Wifi Diberikan (Mahasiswa)")
+        Else
+            Output("Akses Wifi Tidak Diberikan")
+        EndIf
+    Else
+        Output("Akses Wifi Tidak Diberikan")
+    EndIf
