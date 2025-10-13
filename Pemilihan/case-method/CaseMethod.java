@@ -74,7 +74,7 @@ public class CaseMethod {
             }
         }
 
-        if (status1 == "Lulus" && status2 == "Lulus") {
+        if (status1.equals("Lulus") && status2.equals("Lulus")) {
             if (nilaiAkhirTotal >= 70) {
                 statusSemester = "Lulus";
             } else {
