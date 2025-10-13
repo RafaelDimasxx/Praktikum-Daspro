@@ -1,5 +1,3 @@
-package Pemilihan;
-
 import java.util.Scanner;
 
 public class IfElseCetakKRS24 {
@@ -30,5 +28,4 @@ public class IfElseCetakKRS24 {
         }
     }
 }
-           
-  
+

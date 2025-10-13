@@ -1,5 +1,3 @@
-package Pemilihan;
-
 import java.util.Scanner;
 
 public class Tugas2 {
