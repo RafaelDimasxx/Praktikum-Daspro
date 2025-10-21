@@ -50,7 +50,7 @@ public class CaseMethod {
                 status1 = "Tidak Lulus";
             }
         }
-        
+
         if (nilaiAkhir2 > 0 && nilaiAkhir2 <= 100) {
             if (nilaiAkhir2 > 80 && nilaiAkhir2 <= 100) {
                 nilaiHuruf2 = "A";
@@ -88,17 +88,19 @@ public class CaseMethod {
         System.out.printf("Nama: %s\n", nama);
         System.out.printf("NIM: %s\n", nim);
         System.out.println("");
-        System.out.printf("%-10s\t %-8s\t %-8s\t %-8s\t %-8s\t %-8s\t %-8s\n", "Mata Kuliah", "Nilai UTS", "Nilai UAS", "Nilai Tugas",
+        System.out.printf("%-10s\t %-8s\t %-8s\t %-8s\t %-8s\t %-8s\t %-8s\n", "Mata Kuliah", "Nilai UTS", "Nilai UAS",
+                "Nilai Tugas",
                 "Nilai Akhir", "Nilai Huruf", "Status");
-        System.out.println("---------------------------------------------------------------------------------------------------------");
+        System.out.println(
+                "---------------------------------------------------------------------------------------------------------");
         System.out.printf("%-10s\t %-8.2f\t %-8.2f\t %-8.2f\t %-8.2f\t %-8s\t %-8s\n", "Matkul 1", nilaiUTS, nilaiUAS,
                 nilaiTugas, nilaiAkhir, nilaiHuruf1, status1);
-        System.out.printf("%-10s\t %-8.2f\t %-8.2f\t %-8.2f\t %-8.2f\t %-8s\t %-8s\n", "Matkul 2", nilaiUTS2, nilaiUAS2, nilaiTugas2,
+        System.out.printf("%-10s\t %-8.2f\t %-8.2f\t %-8.2f\t %-8.2f\t %-8s\t %-8s\n", "Matkul 2", nilaiUTS2, nilaiUAS2,
+                nilaiTugas2,
                 nilaiAkhir2, nilaiHuruf2, status2);
         System.out.println("");
         System.out.printf("Nilai Akhir Total: %-8.2f\n", nilaiAkhirTotal);
         System.out.printf("Status Semester: %s\n", statusSemester);
-
 
     }
 }
