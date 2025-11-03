@@ -5,7 +5,8 @@ public class NilaiKelompok24 {
         Scanner input = new Scanner(System.in);
         int nilai;
         float totalNilai, rataNilai;
-        for(int i = 1; i <= 6; i++) {
+        int i = 1;
+        while(i <= 6) {
             totalNilai = 0;
             System.out.println("\nKelompok " + i);
             for(int j = 1; j <=5; j++) {
@@ -15,6 +16,7 @@ public class NilaiKelompok24 {
             }
             rataNilai = totalNilai / 5;
             System.out.println("==== Rata-rata nilai kelompok " + i + " adalah " + rataNilai + " ====");
+            i++;
         }
     }
 }
