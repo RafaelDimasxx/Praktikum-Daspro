@@ -3,27 +3,54 @@ import java.util.Scanner;
 public class BioskopScanner24 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int baris, kolom;
+        int baris, kolom, menu;
         String nama, next;
         String[][]penonton = new String[4][2];
-
+        
+        
         while (true) {
-            System.out.print("Masukkan nama: ");
-            nama = input.nextLine();
-            System.out.print("Masukkan baris: ");
-            baris = input.nextInt();
-            System.out.print("Masukkan kolom: ");
-            kolom = input.nextInt();
+            System.out.println("======= MENU BIOSKOP =======");
+            System.out.println("Input data penonton (1)");
+            System.out.println("Tampilkan Daftar Penonton (2)");
+            System.out.println("Exit (3)");
+            menu = input.nextInt();
             input.nextLine();
 
-            penonton[baris-1][kolom-1] = nama;
+            switch (menu) {
+                case 1:
+                   do {
+                    System.out.print("Masukkan nama: ");
+                    nama = input.nextLine();
+                    System.out.print("Masukkan baris: ");
+                    baris = input.nextInt();
+                    System.out.print("Masukkan kolom: ");
+                    kolom = input.nextInt();
+                    input.nextLine();
 
-            System.out.print("Input penonton lainnya? (y/n): ");
-            next = input.nextLine();
+                    penonton[baris-1][kolom-1] = nama;
 
-            if (next.equalsIgnoreCase("n")) {
-                break;
+                    System.out.print("Input penonton lainnya? (y/n): ");
+                    next = input.nextLine();
+
+                    if (next.equalsIgnoreCase("y")) {
+                        continue;
+                    }
+                    }  while (next.equalsIgnoreCase("y"));
+                    break;
+                   
+                case 2: 
+                    for(int i = 0; i < penonton.length; i++){
+                        System.out.println(String.join(", ", penonton[i])+ " " + "baris ke-" + (i+1));
+                    }
+                    break;
+                case 3:
+                    System.exit(0);
+                default:
+                    break;
             }
         }
+        
+            
+        
     }
 }
