@@ -26,24 +26,34 @@ public class BioskopScanner24 {
                     System.out.print("Masukkan kolom: ");
                     kolom = input.nextInt();
                     input.nextLine();
-
-                    penonton[baris-1][kolom-1] = nama;
-
+                    
+                    if (penonton[baris-1][kolom-1] != null) {
+                        System.out.println("Kursi sudah ditempati. Pilih kursi yang lain!");
+                        continue;
+                    } else {
+                        penonton[baris-1][kolom-1] = nama;
+                    }
                     System.out.print("Input penonton lainnya? (y/n): ");
                     next = input.nextLine();
-
+                    
                     if (next.equalsIgnoreCase("y")) {
                         continue;
+                    } else {
+                        break;
                     }
-                    }  while (next.equalsIgnoreCase("y"));
-                    break;
-                   
+                   } while (true);
                 case 2: 
                     for(int i = 0; i < penonton.length; i++){
-                        System.out.println(String.join(", ", penonton[i])+ " " + "baris ke-" + (i+1));
+                        for(int j = 0; j < penonton[i].length; j++) {
+                            if (penonton[i][j] == null) {
+                                penonton[i][j] = "****";
+                            }
+                        }
+                        System.out.println(String.join(", ", penonton[i]));
                     }
                     break;
                 case 3:
+                    System.out.println("Terima kasih");
                     System.exit(0);
                 default:
                     break;
