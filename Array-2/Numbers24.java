@@ -8,7 +8,7 @@ public class Numbers24 {
         numbers[2] = new int[1];
 
         for(int i = 0; i < numbers.length; i++) {
-            System.out.println(Arrays.toString(numbers[i]));    
+            System.out.println("Panjang baris ke-" + (i+1) + " : " + numbers[i].length);    
         }
     }
 }
