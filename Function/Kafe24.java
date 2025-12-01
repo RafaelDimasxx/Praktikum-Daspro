@@ -20,9 +20,12 @@ public class Kafe24 {
         
        
     }
-    public static int hitungTotalHarga(int pilihanMenu, int banyakItem, double diskon) {
+    public static int hitungTotalHarga(int pilihanMenu[], int banyakItem[], double diskon) {
         int[] hargaItems = {15000, 20000, 25000, 15000, 20000, 25000};
-        int totalHargaAwal = hargaItems[pilihanMenu - 1] * banyakItem;
+        int totalHargaAwal = 0;
+        for (int i = 0; i < pilihanMenu.length; i++) {
+            totalHargaAwal += hargaItems[pilihanMenu[i] - 1] * banyakItem[i];
+        }
         double potongan = totalHargaAwal * diskon;
         int totalHarga = (int) (totalHargaAwal - potongan);
         return totalHarga;
@@ -31,10 +34,17 @@ public class Kafe24 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         Menu("Rafael", true);
-        System.out.println("Masukkan nomor menu yang ingin anda pesan! ");
-        int pilihanMenu = input.nextInt();
-        System.out.println("Masukkan jumlah item yang ingin anda pesan! ");
-        int banyakItem = input.nextInt();
+        System.out.println("Berapa menu yang ingin anda pesan?");
+        int menu = input.nextInt();
+        int[] banyakItem = new int[menu];
+        int[] pilihanMenu = new int[menu]; 
+        for(int i = 0; i < banyakItem.length; i++) {
+            System.out.print("Masukkan angka menu ke-" + (i + 1) + " yang ingin anda pesan: ");
+            pilihanMenu[i] = input.nextInt();
+            System.out.println("Masukkan jumlah item yang ingin anda pesan! ");
+            banyakItem[i] = input.nextInt();
+        }
+            
         input.nextLine();
         System.out.print("Kode promo: ");
         String kodePromo = input.nextLine();
